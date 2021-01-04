@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageButton
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reviewBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="150dp"
+        />
+
+    <ImageButton
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:id="@+id/previewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="150dp" />
+
+    <TextView
+        android:id="@+id/tempView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/reviewBtn"
+        android:layout_alignLeft="@+id/myPictureView"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="35dp"
+        android:text="TextView"
+        android:textColor="#A9A9A9"
+        android:textSize="17dp" />
+
+    <com.example.layouttest.myPictureView
+        android:id="@+id/myPictureView"
+        android:layout_height="350dp"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/forecastBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+
+            android:text="FORECAST"
+            />
+
+        <Button
+            android:id="@+id/customBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="CUSTOM"
+            android:layout_marginLeft="30dp"
+            />
+
+        <Button
+            android:id="@+id/galleryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="GALLERY"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
