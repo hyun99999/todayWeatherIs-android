@@ -1,4 +1,0 @@
-language: android
-dist: trusty
-befor_install :
-  - chmod +x gradlew
